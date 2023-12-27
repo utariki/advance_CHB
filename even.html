@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+        if(confirm('Are you 18+ ?')){
+            location.href='adult.html'
+        }else{
+            location.href='index.html'
+        }
+        ">GO1
+
+    </button>
+
+    <button onclick="cf18plus">GO2</button>
+
+    <script>
+        function cf18plus(){
+            location.href=(confirm('18+ ?')) ? 'adult.html' : 'index.html'
+        }
+    </script>
+</body>
+</html>
